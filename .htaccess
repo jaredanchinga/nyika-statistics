@@ -1,0 +1,8 @@
+RewriteEngine On
+# Allow direct access to coming-soon.html and asset directories
+RewriteCond %{REQUEST_URI} !^/coming-soon\.html$
+RewriteCond %{REQUEST_URI} !^/css/
+RewriteCond %{REQUEST_URI} !^/js/
+RewriteCond %{REQUEST_URI} !^/images/
+# Redirect everything else to coming-soon.html
+RewriteRule ^(.*)$ /coming-soon.html [L,R=302]
