@@ -7,7 +7,7 @@
       "destination": "/coming-soon.html" 
     },
     { 
-      "source": "/((?!coming-soon.html$|css/|js/|images/|favicon.ico$).*)", 
+      "source": "/(.*)", 
       "destination": "/coming-soon.html" 
     }
   ],
