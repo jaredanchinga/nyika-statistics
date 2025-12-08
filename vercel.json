@@ -1,16 +1,14 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/((?!coming-soon.html$|css/|js/|images/|favicon.ico$).*)",
-      "destination": "/coming-soon.html",
-      "permanent": false
+  "rewrites": [
+    { 
+      "source": "/", 
+      "destination": "/coming-soon.html" 
     },
-    {
-      "source": "/",
-      "destination": "/coming-soon.html",
-      "permanent": false
+    { 
+      "source": "/((?!coming-soon.html$|css/|js/|images/|favicon.ico$).*)", 
+      "destination": "/coming-soon.html" 
     }
   ],
   "headers": [

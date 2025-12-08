@@ -1,4 +1,8 @@
 // Redirect script for Nyika Statistics website
+// Temporarily disabled to prevent redirect loops
+// The redirects are now handled by Vercel configuration
+
+/*
 (function() {
     // Don't redirect if already on coming-soon page
     if (window.location.pathname.includes('coming-soon.html')) {
@@ -17,3 +21,6 @@
     // Redirect to coming-soon page
     window.location.href = '/coming-soon.html';
 })();
+*/
+
+console.log('Redirects handled by Vercel configuration');
